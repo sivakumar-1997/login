@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Parameter Example</title>
+</head>
+<body>
+    <h1>Query Parameter Example</h1>
+
+    <script>
+        // Get the query parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+
+        // Check if the 'name' parameter is present
+        if (name) {
+            document.write("<p>Hello, " + name + "!</p>");
+        } else {
+            document.write("<p>Hello, Guest!</p>");
+        }
+    </script>
+</body>
+</html>
